@@ -52,7 +52,7 @@
               else {
                   box = $("#chat_div").chatbox({id:"chat_div", 
                                                 user:{key : "value"},
-                                                title : "test chat",
+                                                title : "Czat Programistów",
                                                 messageSent : function(id, user, msg) {
                                                     $("#log").append(id + " said: " + msg + "<br/>");
                                                     $("#chat_div").chatbox("option", "boxManager").addMsg(id, msg);
