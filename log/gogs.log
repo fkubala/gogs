@@ -1,0 +1,15 @@
+2016/05/31 21:47:15 [I] Log Mode: File(Info)
+2016/05/31 21:47:15 [I] Cache Service Enabled
+2016/05/31 21:47:15 [I] Session Service Enabled
+2016/05/31 21:47:15 [I] Git Version: 1.9.4.msysgit.2
+2016/05/31 21:47:16 [I] Git config user.name set to Gogs
+2016/05/31 21:47:20 [I] SQLite3 Supported
+2016/05/31 21:47:20 [I] Run Mode: Production
+2016/05/31 21:47:20 [I] First-time run install finished!
+2016/05/31 21:52:17 [I] Log Mode: File(Info)
+2016/05/31 21:52:17 [I] Cache Service Enabled
+2016/05/31 21:52:17 [I] Session Service Enabled
+2016/05/31 21:52:17 [I] Git Version: 1.9.4.msysgit.2
+2016/05/31 21:52:19 [I] SQLite3 Supported
+2016/05/31 21:52:19 [I] Run Mode: Production
+2016/05/31 21:52:20 [I] Listen: http://0.0.0.0:3000
