@@ -802,6 +802,19 @@ function searchRepositories() {
 }
 
 $(document).ready(function () {
+    var box = null;
+          $("input[type='button']").click(function(event, ui) {
+              if(box) {
+                  box.chatbox("option", "boxManager").toggleBox();
+              }
+              else {
+                  box = $("#chat_div").chatbox({title : "Czat Programistów",
+                  messageSent : function(i, item, msg) {
+                  $("#chat_div").chatbox("option", "boxManager").addMsg('użytkownik napiał: ', msg);
+                }});
+              }
+          });
+
     csrf = $('meta[name=_csrf]').attr("content");
     suburl = $('meta[name=_suburl]').attr("content");
 

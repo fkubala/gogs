@@ -38,29 +38,10 @@
 
 
 	<link rel="stylesheet" href="{{AppSubUrl}}/css/jquery-ui-1.8.2.custom.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="{{AppSubUrl}}/js/jquery-1.4.2.min.js"></script>
+    <!--<script type="text/javascript" src="{{AppSubUrl}}/js/jquery-1.4.2.min.js"></script>-->
     <script type="text/javascript" src="{{AppSubUrl}}/js/jquery-ui-1.8.2.custom.min.js"></script>
     <link type="text/css" href="{{AppSubUrl}}/css/jquery.ui.chatbox.css" rel="stylesheet" />
     <script type="text/javascript" src="{{AppSubUrl}}/js/jquery.ui.chatbox.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-          var box = null;
-          $("input[type='button']").click(function(event, ui) {
-              if(box) {
-                  box.chatbox("option", "boxManager").toggleBox();
-              }
-              else {
-                  box = $("#chat_div").chatbox({id:"chat_div", 
-                                                user:{key : "value"},
-                                                title : "Czat Programistów",
-                                                messageSent : function(id, user, msg) {
-                                                    $("#log").append(id + " said: " + msg + "<br/>");
-                                                    $("#chat_div").chatbox("option", "boxManager").addMsg(id, msg);
-                                                }});
-              }
-          });
-      });
-    </script>
 
 
 	<!-- JavaScript -->
@@ -140,10 +121,6 @@
 												<a class="{{if .PageIsUserSettings}}active{{end}} item" href="{{AppSubUrl}}/user/settings">
 													<i class="icon octicon octicon-settings"></i>
 													{{.i18n.Tr "your_settings"}}<!-- Your settings -->
-												</a>
-												<a class="item" target="_blank" href="http://gogs.io/docs" rel="noreferrer">
-													<i class="icon octicon octicon-question"></i>
-													{{.i18n.Tr "help"}}<!-- Help -->
 												</a>
 												{{if .IsAdmin}}
 													<div class="divider"></div>
